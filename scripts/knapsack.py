@@ -74,6 +74,19 @@ def teamknapsack(budget,points_grid,prices_grid,players_grid):
             return memo[(budget,len(prices_grid), len(prices_grid[0]))]
 
 
+def transferknapsack(team, transfers, optimal_team, ids, prices, points, choices):
+    ## Compare current team to determine the players that should not be touched
+    ## Loop through the team to find all the combinations of transfer outs if player is not on optimal team
+        ### Encode all combinations before starting the knapsack loop
+        ### For every loop find the optimal replacement set
+            ## Use team max points = points of new players + points of players not transferred
+        ### Compare all replacements to see which one has the highest increment in max points
+
+        #HOW CAN WE REFACTOR AND USE THE TEAM KNAPSACK FUNCTION
+        #THERE ARE INSTANCE WHERE WE DON'T HAVE TO EXHAUST THE TRANSFERS
+        #FOR COMMUNITY SCALE, OPTIMAL TEAM FUNCTIONS SHOULD RUN ON A CRON JOB AND ENCODED IN A BASE
+
+
 if __name__ == "___main__":
     ## Test position knapsack algorithm
     print(positionalknapsack(budget=8,ids=[0,1,2,3],prices=[1,3,5,7],points=[2,4,7,10],choices=2))
