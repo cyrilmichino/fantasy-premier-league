@@ -1,5 +1,5 @@
 # Fantasy Premier League Engine [IN PROGRESS]
-FPL points prediction model and team optimisation script. For standard FPL gameweek and the new challenge feature.
+FPL points prediction model and team optimisation script. For standard FPL gameweek and the new challenge feature. Before building the final machine learning model, the prediction data will be sourced from FPL Form.
 
 ### Project Progress Tracker
 - [ ] Problem framing and data sourcing (Official FPL data plus player statistics)
